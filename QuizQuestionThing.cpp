@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
 	//Declaring all variables
-	int As1, As2, As3, StCount, StCurrent;
+	int StCount, StCurrent;
 	string StName, StNameHi, StNameLo, StID, StIDHi, StIDLo;
-	float AsAvg, AsHi = -1, AsLo = 101;
+	float AsAvg, AsHi = -1, AsLo = 101, As1, As2, As3;
 
 	//Intro & Determining Class Size
 	cout << "*************************************";
@@ -17,20 +17,20 @@ int main()
 	cin >> StCount;
 
 	//Loop for all students
-	for (StCurrent = 1; StCurrent <= StCount; StCurrent++) {
+	for (StCurrent = 0; StCurrent < StCount; StCurrent++) {
 		
 		//Taking Student Details Input
 		cout << "\n\nWhat is this Student's name? \t";
 		cin >> StName;
-		cout << "\nWhat is this Student's ID? \t";
+		cout << "What is this Student's ID? \t";
 		cin >> StID;
-		cout << "\nWhat was this Student's 1st Assessment Score? \t";
+		cout << "What was this Student's 1st Assessment Score? \t";
 		cin >> As1;
-		cout << "\nWhat was this Student's 2nd Assessment Score? \t";
+		cout << "What was this Student's 2nd Assessment Score? \t";
 		cin >> As2;
-		cout << "\nWhat was this Student's 3rd Assessment Score? \t";
+		cout << "What was this Student's 3rd Assessment Score? \t";
 		cin >> As3;
-		cout << "\nStudent Details Stored. Next Student...\n";
+		cout << "Student Details Stored. Next Student...\n";
 
 		//Calculating Student's Average Grade
 		AsAvg = (As1 + As2 + As3) / 3;
